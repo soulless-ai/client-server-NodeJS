@@ -1,0 +1,367 @@
+body {
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 500;
+  color:#fff
+}
+.info p {
+  text-align:center;
+  color: #999;
+  text-transform:none;
+  font-weight:600;
+  font-size:15px;
+  margin-top:2px
+}
+
+.info i {
+  color:#55acee;
+}
+
+h1 {
+  text-align:center; 
+  color: #666;
+  text-shadow: 1px 1px 0px #FFF;
+  margin:50px 0px 0px 0px
+}
+
+h2 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 17px;
+  color: gray;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: inherit;
+}
+
+hr {
+  position: relative;
+  margin-top: 17%;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  opacity: 0.15;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #f2f2f2;
+  z-index:-1;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  display: block;
+  position: relative;
+  width: 530px;
+  height: 85vh;
+  box-shadow: 0px 0px 10px 1px #333;
+  overflow: hidden;
+  background-color: #000;
+}
+
+img.bg-img {
+  display: block;
+  position: absolute;
+  margin: auto;
+  left: 0;
+}
+
+.menu {
+  position: relative;
+  padding-top: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.menu h2 {
+  display: inline;
+  margin: 20px;
+  padding-bottom: 3px;
+  border-bottom: 3px solid #FD6A02;
+  font-weight: 500;
+  cursor: default;
+}
+.menu .active h2 {
+  border-bottom: 0 solid #1161ee;
+  color: gray;
+  transition: color 0.5s ease-in;
+  cursor: pointer;
+}
+
+.connexion {
+    position: absolute;
+    padding: 5% 13%;
+    width: 100%;
+    height: 80%;
+    right:0px;
+    transition: all 0.7s;
+}
+
+.connexion h2 {
+    display: inline;
+    margin: 20px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #1161ee;
+}
+
+.connexion h4 {
+    margin-bottom: 0;
+    text-align: center;
+    color: #ffffff;
+    opacity: 0.6;
+}
+#forgotButton {
+    margin-bottom: 0;
+    text-align: center;
+    color: #ffffff;
+    opacity: 0.6;
+}
+#forgotButton:hover {
+    opacity: 1;
+    transition: all 0.1s ease-in;
+    cursor: pointer;
+}
+.connexion h4:hover {
+    opacity: 0.8;
+    transition: all 0.1s ease-in;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 100;
+    color: gray;
+}
+input {
+    display: block;
+    width: 100%;
+    padding: 13px 5%;
+    font-size: 0.8333rem;
+    color: #FD6A02;
+    opacity: 1;
+    margin: 10px 0px;
+    outline: none;
+    background: #000;
+    border: 1px solid gray;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    transition: all 0s;
+}
+
+input p {
+    color: #fff;
+    opacity: 1;
+}
+
+input.submit {
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #fff;
+    opacity: 1;
+    background-color: #1161EE;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.check {    
+    display: flex;
+    align-items: center;
+}
+.check label {
+    float: left;
+    width: 10%;
+    margin: 0;
+}
+
+.check h3 {
+    padding: 5px 10px;
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox:checked + svg .path-moving {
+    -webkit-transition: stroke .4s,stroke-dasharray .4s,stroke-dashoffset .4s cubic-bezier(.3,.8,.6,1.5);
+    transition: stroke .4s,stroke-dasharray .4s,stroke-dashoffset .4s cubic-bezier(.3,.8,.6,1.5);
+    stroke-dasharray: 25 90;
+    stroke-dashoffset: 0;
+    stroke: #fff;
+}
+
+.path-moving,
+.path-back {
+    fill: none;
+    stroke: #FD6A02;
+    stroke-width: 3px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.path-moving {
+    -webkit-transition: stroke .4s,stroke-dasharray .4s,stroke-dashoffset .4s;
+    transition: stroke .4s,stroke-dasharray .4s,stroke-dashoffset .4s;
+    stroke: gray;
+    stroke-dasharray: 110;
+    stroke-dashoffset: -32;
+}
+.enregistrer {
+    position: absolute;
+    padding: 5% 13%;
+    width: 100%;
+    height: 80%;
+    left:0px;
+    transition: all 0.7s;
+}
+.active-section {
+    position: absolute;
+    left:500px;
+}
+.remove-section {
+    position: absolute;
+    right:500px;
+}
+.check h3 {
+    line-height: 26px;
+}
+h3 a {
+    color: gray;
+}
+
+#verification, #verificationForgot {
+    text-align: center;
+}
+form div {
+    display: flex;
+}
+#get_data_form div select {
+    display: block;
+    width: 30%;
+    padding: 13px;
+    border: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-family: "Roboto",sans-serif;
+    opacity: 0.15;
+    margin: 10px 0px;
+}
+#get_data_form div input {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.btn-main {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  font-size: 17px;
+  font-weight: 400;
+  opacity: 1;
+  cursor: pointer;
+  margin-top: 15px;
+  line-height: 27px;
+}
+.fly {
+  position: absolute;
+  left: 8%;
+  top: 31%;
+  color: #FD6A02;
+  transition: all 0.2s;
+}
+.fly.active {
+  top: -25%;
+  left: 5%;
+  color: gray;
+}
+.block-for-fly {
+  position: relative;
+  margin-bottom: 4%;
+}
+
+.simulate-mouse-enter ~ .fly {
+  top: -25% !important;
+  left: 5% !important;
+  color: gray !important;
+}
+
+input:focus ~ .fly, 
+input:hover ~ .fly, 
+.fly:hover, 
+.fly:focus {
+  top: -25%;
+  left: 5%;
+  color: gray;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: all 0s;
+  -webkit-box-shadow:0 0 0 50px #000 inset; /* можно изменить на любой вариант цвета */
+  -webkit-text-fill-color: #FD6A02;
+}
+.gold {
+  color: #FD6A02;
+}
+.client_info_container {
+  width: 100%;
+  height: 50%;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  overflow-y: scroll;
+  flex-direction: column;
+}
+
+#signIn_form, #get_email_form-forgot, #get_email-Ver_form-forgot, #get_change-password_form,
+#get_email_form, #get_email-Ver_form, #get_data_form {
+  height: 100%;
+  position: relative;
+}
+.buttons-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media only screen and (max-width:767px) { 
+  h3 {
+    font-size: 12px;
+    line-height: 16px !important;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  .fly {
+    font-size: 12px;
+  }
+}

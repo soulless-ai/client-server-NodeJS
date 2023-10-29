@@ -1,0 +1,44 @@
+<svg
+  class="icon-div"
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 48 48"
+  fill="#4CAF50"
+  role="button"
+  tabindex="0"
+>
+  <!-- Крыша с мягкими краями -->
+  <path
+    d="M24 8L8 24h32z"
+    fill="transparent"
+    stroke="#EC6800"
+    stroke-width="4"
+    stroke-linejoin="round"
+  />
+
+  <!-- Стены с мягкими краями -->
+  <path
+    d="M40 24V44H8V24z"
+    fill="transparent"
+    stroke="#EC6800"
+    stroke-width="4"
+    stroke-linejoin="round"
+  />
+
+  <!-- Дверь с мягкими краями -->
+  <rect
+    x="20"
+    y="32"
+    width="8"
+    height="12"
+    fill="transparent"
+    stroke="#EC6800"
+    stroke-width="2"
+    stroke-linejoin="round"
+  />
+
+  <!-- Пол дома -->
+  <path
+    d="M4 44H44V48H4z"
+    fill="#000"
+  />
+</svg>

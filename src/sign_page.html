@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+    <head>
+      <meta charset="utf-8"/>
+      <title>Site Name — Платформа бизнес аналитики</title>
+      <meta name="description" content="Для автоматизации получения данных и визуализации.">
+      <meta name="keywords" content="Бизнес аналитика, Автоматизания">
+      <meta name="author" content="Else-Agency">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta property="og:url" content="">
+      <meta property="og:title" content="Site Name — Платформа бизнес аналитики">
+      <meta property="og:description" content="Для автоматизации получения данных и визуализации.">
+      <meta property="og:type" content="website">
+      <meta property="og:image" content="">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="theme-color" content="#0e0321">
+      <link rel="canonical" href="">
+    <!--website-favicon-->
+      <link rel="icon" href="images/favicon.png">
+      <link rel="shortcut icon" href="images/favicon.png">
+      <link rel="apple-touch-icon" href="images/favicon.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="images/favicon.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="images/favicon.png">
+      <meta name="msapplication-TileColor" content="#D1823B">
+      <meta name="msapplication-TileImage" content="images/favicon.png">
+    <!--plugin-css-->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/plugin.min.css" rel="stylesheet">
+    <!-- template-style-->
+      <link href="css/style.css" rel="stylesheet">
+      <link href="css/responsive.css" rel="stylesheet">
+      <link href="css/darkmode.css" rel="stylesheet">
+      <link href="css/sign_page.css" rel="stylesheet">
+      
+    </head>
+    <body>
+    <!--Start Header -->
+      <div class="content">
+        <div class="container">
+          <div class="menu">
+            <a href="#connexion" class="btn-connexion"><h2>ВОЙТИ</h2></a>
+            <a href="#registrer" class="btn-enregistrer active"><h2>ПРИСОЕДИНИТЬСЯ</h2></a>
+          </div>
+
+          <div class="connexion">
+            <form class="contact-form" id="signIn_form">
+              <div class="block-for-fly">
+                <input type="email" id="emailIn" name="emailIn" placeholder="" required>
+                <h6 class="fly">Ваша почта:</h6>
+              </div>
+              <div class="block-for-fly">
+                <input type="password" id="passwordIn" name="passwordIn" placeholder="" required autocomplete="current-password">
+                <h6 class="fly">Ваш пароль:</h6>
+              </div>
+              <!-- <div class="check">
+                <label>       
+                  <input id="remember" name="remember" type="checkbox" class="checkbox">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26px" height="23px">
+                      <path class="path-back"  d="M1.5,6.021V2.451C1.5,2.009,1.646,1.5,2.3,1.5h18.4c0.442,0,0.8,0.358,0.8,0.801v18.398c0,0.442-0.357,0.801-0.8,0.801H2.3c-0.442,0-0.8-0.358-0.8-0.801V6"/>
+                      <path class="path-moving" d="M24.192,3.813L11.818,16.188L1.5,6.021V2.451C1.5,2.009,1.646,1.5,2.3,1.5h18.4c0.442,0,0.8,0.358,0.8,0.801v18.398c0,0.442-0.357,0.801-0.8,0.801H2.3c-0.442,0-0.8-0.358-0.8-0.801V6"/>
+                    </svg>
+                </label>
+                <h3>Запомнить вас?</h3>
+              </div> -->
+              <div class="buttons-bottom">
+                <button type="submit" id="signIn" name="signIn" class="lnk btn-main bg-btn6">Отправить<span class="circle"></span></button>
+                <hr>
+                <a href="#" target="" id="forgotButton"><h4>Забыли пароль?</h4></a>
+              </div>
+            </form>
+            
+            <form class="contact-form hidden" id="get_email_form-forgot">
+              <div class="block-for-fly">
+                <input type="email" id="emailForgot" name="emailForgot" class="simulate-mouse-enter" placeholder="" required>
+                <h6 class="fly">Введите вашу почту, для изменения пароля:</h6>
+              </div>
+              <div class="buttons-bottom">
+                <button type="submit" class="lnk btn-main bg-btn6 backToSignIn">Вернуться<span class="circle"></span></button>
+                <button type="submit" id="continueVerificationForgot" name="continueVerificationForgot" class="lnk btn-main bg-btn6">Продолжить<span class="circle"></span></button>
+              </div>
+            </form>
+
+            <form class="hidden" id="get_email-Ver_form-forgot">
+              <div class="block-for-fly">
+                <input type="number" id="verificationForgot" name="verificationForgot" class="simulate-mouse-enter" placeholder=""  max="7" maxlength="6" inputmode="numeric" oninput="limitInputLength(event, 6)" required>
+                <h6 class="fly">Код отправлен на ваш почтовый адрес:</h6>
+              </div>
+              <div class="buttons-bottom">
+                <button type="submit" class="lnk btn-main bg-btn6 backToSignIn">Вернуться<span class="circle"></span></button>
+                <button type="submit" id="continueToChangePassword" name="continueToChangePassword" class="lnk btn-main bg-btn6">Продолжить<span class="circle"></span></button>
+              </div>
+            </form>
+            
+            <form class="hidden" id="get_change-password_form">
+              <div class="block-for-fly">
+                <input type="password" id="changePasswordForgot" name="changePasswordForgot" class="simulate-mouse-enter" placeholder="" pattern=".{8,}" required>
+                <h6 class="fly">Введите ваш новый пароль:</h6>
+              </div>
+              <div class="block-for-fly">
+                <input type="password" id="changePasswordForgotAuth" name="changePasswordForgotAuth" class="simulate-mouse-enter" placeholder="" required>
+                <h6 class="fly">Введите ваш новый пароль заново:</h6>
+              </div>
+              
+              <button type="submit" id="changePasswordButton" name="changePasswordButton" class="lnk btn-main bg-btn6 buttons-bottom">Подтвердить<span class="circle"></span></button>
+            </form>
+          </div>
+          
+          <div class="enregistrer active-section">
+            <form class="contact-form" id="get_email_form">
+              <div class="block-for-fly">
+                <input type="email" id="email" name="email" placeholder="" required>
+                <h6 class="fly">Ваша почта:</h6>
+              </div>
+                
+              <div class="check">
+                <label>       
+                  <input id="check1" type="checkbox" name="check1" class="checkbox" required>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26px" height="23px">
+                      <path class="path-back"  d="M1.5,6.021V2.451C1.5,2.009,1.646,1.5,2.3,1.5h18.4c0.442,0,0.8,0.358,0.8,0.801v18.398c0,0.442-0.357,0.801-0.8,0.801H2.3c-0.442,0-0.8-0.358-0.8-0.801V6"/>
+                      <path id = "check-error1" class="path-moving" d="M24.192,3.813L11.818,16.188L1.5,6.021V2.451C1.5,2.009,1.646,1.5,2.3,1.5h18.4c0.442,0,0.8,0.358,0.8,0.801v18.398c0,0.442-0.357,0.801-0.8,0.801H2.3c-0.442,0-0.8-0.358-0.8-0.801V6"/>
+                    </svg>
+                </label>
+                <h3>Принимаю условия <a href="contracts/offer.html">оферты</a> и <a href="contracts/privacy-policy.html">политики конфиденциальности</a></h3>
+              </div>
+              <div class="check">
+                <label>       
+                  <input id="check2" type="checkbox" name="check2" class="checkbox" required>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="26px" height="23px">
+                    <path class="path-back"  d="M1.5,6.021V2.451C1.5,2.009,1.646,1.5,2.3,1.5h18.4c0.442,0,0.8,0.358,0.8,0.801v18.398c0,0.442-0.357,0.801-0.8,0.801H2.3c-0.442,0-0.8-0.358-0.8-0.801V6"/>
+                    <path id = "check-error2" class="path-moving" d="M24.192,3.813L11.818,16.188L1.5,6.021V2.451C1.5,2.009,1.646,1.5,2.3,1.5h18.4c0.442,0,0.8,0.358,0.8,0.801v18.398c0,0.442-0.357,0.801-0.8,0.801H2.3c-0.442,0-0.8-0.358-0.8-0.801V6"/>
+                  </svg>
+                </label>
+                <h3>Даю <a href="contracts/pd-agreement.html">согласие</a> и <a href="contracts/personal-data.html">поручение</a> на обработку ПД</h3>
+              </div>
+
+              <button type="submit" id="sendEmail" name="sendEmail" class="lnk btn-main bg-btn6 buttons-bottom">Отправить<span class="circle"></span></button>
+            </form>
+
+            <form id="get_email-Ver_form" class="hidden">
+              <div class="block-for-fly">
+                <input type="number" id="verification" name="verification" class="simulate-mouse-enter" placeholder="******"  max="7" maxlength="6" inputmode="numeric" required>
+                <h6 class="fly">Код отправлен на ваш почтовый адрес:</h6>
+              </div>
+              <div class="buttons-bottom">
+                <button type="submit" class="lnk btn-main bg-btn6 backToEmail">Вернуться<span class="circle"></span></button>
+                <button type="submit" id="continueVerification" class="lnk btn-main bg-btn6">Продолжить<span class="circle"></span></button>
+              </div>
+            </form>
+
+            <form id="get_data_form" class="hidden">
+              <div class="client_info_container">
+                <div style = "margin-bottom: 4%;">
+                  <select id="country" name="country">
+                    <option value="+7">+7</option>
+                    <option value="+1">+1</option>
+                  </select>
+                  <input type="phone" id="phone" name="phone" placeholder="(999)999-99-99" pattern="[1-9][0-9]*" required>
+                  <script>
+                    const inputElementNumber = document.getElementById("phone");
+                    inputElementNumber.addEventListener("input", function(event) {
+                      const value = event.target.value;
+                      const cleanValue = value.replace(/[^\d]+/g, ''); // Здесь используется регулярное выражение для удаления неразрешенных символов
+                      event.target.value = cleanValue;
+                    });
+                  </script>
+                </div>
+                <div class="block-for-fly">
+                  <input type="password" id="password" name="password" pattern=".{8,}" required autocomplete="new-password">
+                  <h6 class="fly">Придумайте пароль:</h6>
+                </div>
+                  
+                <div class="block-for-fly">
+                  <input type="password" id="passwordVerification" name="passwordVerification" pattern=".{8,}" required autocomplete="new-password">
+                  <h6 class="fly">Подтвердите пароль:</h6>
+                </div>
+
+                <div class="block-for-fly">
+                  <input type="text" id="user_name" name="user_name"  pattern="^\p{L}+$" required>
+                  <h6 class="fly">Укажите ваше имя:</h6>
+                </div>
+                <script>
+                  const inputElementName = document.getElementById("user_name");
+                  inputElementName.addEventListener("input", function(event) {
+                    const value = event.target.value;
+                    const cleanValue = value.replace(/[^a-zA-Zа-яА-Я]+/g, ''); // Здесь используется регулярное выражение для удаления неразрешенных символов
+                    event.target.value = cleanValue;
+                  });
+                </script>
+                <div class="block-for-fly">
+                  <input type="text" id="user_second_name" name="user_second_name"  pattern="^\p{L}+$" required>
+                  <h6 class="fly">Укажите вашу фамилию:</h6>
+                </div>
+                <script>
+                  const inputElementSecondName = document.getElementById("user_second_name");
+                  inputElementSecondName.addEventListener("input", function(event) {
+                    const value = event.target.value;
+                    const cleanValue = value.replace(/[^a-zA-Zа-яА-Я]+/g, ''); // Здесь используется регулярное выражение для удаления неразрешенных символов
+                    event.target.value = cleanValue;
+                  });
+                </script>
+              </div>   
+              <div class="buttons-bottom">
+                <button type="submit" class="lnk btn-main bg-btn6 backToEmail">Вернуться<span class="circle"></span></button>
+                <button type="submit" id="continueToProfile" class="lnk btn-main bg-btn6">Продолжить<span class="circle"></span></button>
+              </div> 
+            </form>
+          </div>
+        </div>
+      </div>
+    <!-- js placed at the end of the document so the pages load faster -->
+    <!--common script file-->
+      <script type="module" src="js/config.js"></script>
+      <script type="module" src="js/sign_page.js"></script>
+    </body>
+</html>

@@ -1,0 +1,672 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+body {
+    height: 100%;
+    background-color: #ffffff;
+}
+li {
+    padding: 10px;
+    border-bottom: solid;
+}
+a {
+    color: #6a6a8e;
+}
+input {
+    accent-color: #EC6800;
+}
+.item-info p {
+    padding: 20px 30px;
+    border-bottom: solid #e7e7e7;
+}
+.fixed-left {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2030;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 42px;
+    height: 100vh;
+}
+#main-nav-options {
+    display: none;
+}
+.toggles-options {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 2040;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.main-header {
+    justify-content: center;
+    align-items: flex-start;
+    background: #000000;
+    padding: 0px;
+}
+.menu-header {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+#menu-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    z-index: 2050;
+}
+.menu-section-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 32px;
+}
+.menu-section-data-info {
+    display: flex;
+}
+.menu-section-data-info-first {
+    display: flex;
+    align-items: center;
+}
+.menu-section-data-info-item {
+    padding: 0px;
+    margin: 0px 10px;
+    display: flex;
+    justify-content: center;
+}
+.menu-section-data-info-item p {
+    font-size: 14px;
+}
+.menu-section-data-info-item h6 {
+    color: #EC6800;
+    margin-left: 5px;
+    padding-left: 5px;
+}
+.menu-section-data-info-item h6, .menu-section-data-info-item p {
+    display: flex;
+    align-items: center;
+}
+#menu-section, #menu-section p {
+    color: #FFF;
+    font-size: 12px;
+}
+
+#main-profile-section {
+    height: 100vh;
+}
+#options-section {
+    height: 100vh;
+}
+.hc-offcanvas-nav {
+    visibility: hidden;
+    display: none;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    z-index: 2020;
+}
+.hc-offcanvas-nav.nav-position-left .nav-container {
+    left: 100px;
+}
+
+.nav-bg-b .hc-nav-trigger span, .nav-bg-b .hc-nav-trigger span::before, .nav-bg-b .hc-nav-trigger span::after {
+    background: #FD6A02;
+}
+.icon-container {
+    position: relative;
+    width: 100%; 
+    height: 45px; 
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+}
+.icon-div {
+  width: 100%;
+  height: 100%;
+}
+
+.cc-acjo, .cc-143a {
+    opacity: 0;
+}
+.contract_info_section {
+    background: #FFF;     
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #EC6800;
+}
+h4 {
+    font-weight: 900;
+}
+.container {
+    padding: 0;
+    margin-top: 40px;
+    
+}
+.custom-nav {
+    justify-content: space-between;
+    border: none;
+    height: 70px;
+}
+.text-block {
+    padding-top: 70px;
+    background: white;
+    height: 100%;
+}
+.single-card-item {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    display: flex;
+    width: 100%;
+    border: solid #e7e7e7;
+}
+.item-info {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+.item-info h6 {
+    color: #EC6800;
+    display: flex;
+    align-items: center;
+}
+p {
+    line-height: 22px;
+    color: #000;
+}
+.grid-container {
+    margin: 0px;
+    display: grid;
+    grid-template-rows: repeat(2, 0.2fr); /* Three rows with equal height */
+    grid-template-columns: repeat(3, 1fr); /* Four columns with equal width */
+    grid-auto-rows: 1fr; /* Additional rows fill the available space */
+    grid-gap: 10px; /* Gap between grid items */
+}
+.grid-container div {
+    border: none;
+    padding-left: 0;
+}
+.grid-container p {
+    border: none;
+    padding-left: 0;
+}
+.table-background {
+    background: #ffffff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top: solid;
+}
+.col-lg-8 {
+    width: auto;
+}
+.add-account-button {
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.account-list-main {
+    display: flex;
+    flex-direction: column;
+}
+.account-list-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0px;
+}
+.account-list-class {
+    width: auto;
+
+}
+.account-list-class div div {
+    flex-direction: column;
+}
+
+#addAccountForm {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 100vh;
+    background: transparent;
+    z-index: 56;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-container {
+    position: relative;
+    background: #000;
+    color: #fff;
+    width: 60%;
+    height: 60%;
+    padding: 50px 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.form-group {
+    margin: 13px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    height: 30px;
+    align-items: center;
+}
+.form-group input, .form-group .radioButtons {
+    width: 56%;
+    margin-left: 20px;
+    padding: 6px 10px;
+}
+.form-group .radioButtons {
+    margin-left: 20px;
+    padding: 0;
+}
+.radioButtons input {
+    width: auto;
+    margin-left: 0px;
+}
+.radioButtons {
+    display: flex;
+    justify-content: space-around;
+}
+.form-container a {
+    bottom: 0;
+    position: absolute;
+    margin: 20px;
+    margin-bottom: 40px;
+    width: 30%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.accountsMenus {
+    position: absolute;
+    background: #FD6A02;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    transition: all 0.4s;
+}
+.accountsMenus li {
+    transition: all 0.4s;
+    border-bottom: none;
+}
+.accountsMenus li:hover {
+    background: black;
+}
+
+.form-options {
+    width: 70%;
+}
+.form-options div {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 36px 0px;
+}
+.form-options input {
+    margin-left: 12px;
+    width: 60%;
+    padding: 5px 10px;
+    position: relative;
+}
+#country {
+    margin-left: 12px;
+    padding: 5px 10px;
+}
+.form-options button {
+    width: 40%;
+    background: #000;
+    color: #FFF;
+    padding: 6px;
+    border:none
+}
+.form-options button:hover {
+    background: #EC6800;
+    width: 45%;
+}
+#change_data_form, #change_password_form {
+    display: flex;
+    justify-content: flex-end
+}
+.fly {
+    position: absolute;
+    left: 41%;
+    color: gray;
+}
+input:focus ~ .fly,
+input:hover ~ .fly {
+    top: -24px;
+    left: 41%;
+}
+.fly.active {
+    top: -24px;
+}
+
+
+.nav-brand {
+    color: #000000;
+}
+.nav-bg-b .custom-nav .nav-list li a.menu-links {
+    color: #000000;
+}
+.common-heading-section-two h2 {
+    font-size: 50px;
+}
+.common-heading-section-two h5 {
+    font-size: 30px;
+    font-weight: 549;
+}
+.section-2-blocks-margin-top {
+    margin-top: 30px;
+}
+.section-2-buttons-border-style {
+    border: 1px solid #fd6a02;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+.section-2-first-width {
+    width: 75%;
+}
+.section-2-second-width {
+    width: 24%;
+}
+.section-2-first-blocks-height {
+    height: 49%;
+}
+.section-2-first h6 {
+    color: gray;
+    font-weight: 500;
+}
+.section-2-first h4 {
+    font-weight: 500;
+}
+.section-2-info-block {
+    display: flex;
+}
+.section-2-info-items {
+    border-color: gray;
+    padding: 2px 10px;
+    margin-right: 12px; 
+}
+.section-2-second p {
+    color: gray;
+    font-size: 12px;
+    line-height: 20px;
+}
+.section-2-second-size {
+    height: 15%;
+}
+#main_button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+.button-for-active h5 {
+    font-weight: 100;
+}
+
+.menu-section-data-info-item-payment {
+    font-size: 12px;
+    display: flex;
+    position: absolute;
+    bottom: -20px;
+    background-color: black;
+    padding: 5px 10px 10px 10px;
+    border-bottom-right-radius: 21px;
+    border-bottom-left-radius: 20px;
+    color: white;
+    -webkit-transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+    -o-transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+    transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+}
+.menu-section-data-info-item-payment::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    position: absolute;
+    left: auto;
+    right: 0;
+    z-index: 1;
+    color: #FD6A02;
+    -webkit-transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+    -o-transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+    transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+    background: currentColor;
+}
+
+.crisp-client .cc-tlyw[data-position-reverse=true][data-full-view=true] .cc-kxkl .cc-nsge {
+    bottom: 100px !important;
+    left: 20px !important;
+}
+body .crisp-client .cc-tlyw[data-position-reverse=true] .cc-kxkl .cc-1hqb {
+    bottom: 100px!important;
+    left: 120px !important;
+}
+
+.buttons-bottom {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-div {
+    fill: #EC6800;
+ }
+
+ .closed-door {
+    /* Стили для закрытой двери */
+    /* Здесь можно определить начальное положение двери */
+    /* Например, transform: rotateY(0deg); для закрытой двери */
+    transition: transform 0.5s ease; /* Добавим анимацию при изменении свойства transform */
+ }
+
+ .open-door {
+    /* Стили для открытой двери */
+    /* Здесь можно определить конечное положение двери */
+    /* Например, transform: rotateY(90deg); для открытой двери */
+    transition: transform 0.5s ease; /* Добавим анимацию при изменении свойства transform */
+    opacity: 0; /* Начально установим прозрачность в 0, чтобы скрыть открытую дверь */
+ }
+
+.quit-verification-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999999999999999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000c9;
+}
+.quit-verification-main {
+    background-color: #000;
+    width: 30%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly
+}
+.quit-verification-main div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
+#db_options div {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin: 36px 0px;
+    flex-direction: column;
+}
+#db_options div p {
+    margin-top: 12px;
+    text-underline-offset: 2px;
+    text-underline-position: under;
+    margin-bottom: -24px;
+    text-decoration: underline;
+    font-weight: 800;
+    font-size: x-large;
+}
+
+#drag-drop-import-csv {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 60;
+    background-color: #0000009c;
+}
+.drag-area {
+    border: 2px dashed #000000;
+    height: 500px;
+    width: 700px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: #ff6a00bd;
+    position: relative;
+    transition: all 0.5s;
+}
+.drag-area.active {
+    border: 2px dashed #000000;
+}
+.drag-area .icon {
+    color: #fff;
+}
+.drag-area div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.drag-area div * {
+    margin: 12px;
+}
+.drag-area header {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+.drag-area span {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    margin: 10px 0 15px 0;
+}
+.drag-area .lnk {
+    background-color: black;
+    padding: 0 60px;
+}
+.drag-area img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.drag-area #drag-exit-button {
+    width: 45px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    text-align: center;
+    cursor: pointer;
+}
+.drag-area #drag-exit-button::before {
+    margin-left: -11px;
+    transform: rotate(135deg);
+}
+.drag-area #drag-exit-button::after {
+    transform: rotate(-45deg);
+}
+.drag-area #drag-exit-button::before, .drag-area #drag-exit-button::after {
+    content: '';
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    margin-top: -3px;
+    border-top: 3px solid #101010;
+    border-left: 3px solid #101010;
+}
+@media only screen and (max-width:767px) { 
+    h1 { font-size: 14px !important; }
+    h2 { font-size: 13px !important; }
+    h3 { font-size: 12px !important; line-height: 16px !important; }
+    h4 { font-size: 11px !important; line-height: 16px !important; }
+    h5 { font-size: 10px !important; line-height: 16px !important; }
+    h6 { font-size: 9px !important; line-height: 16px !important; }
+    .justify-content-space-between { flex-direction: row !important; align-items: normal !important; }
+    .button-for-active {  width: 100% !important; }
+    .section-2-buttons-border-style { flex-direction: row !important; }
+    .section-2 { flex-direction: column !important; align-items: normal !important; }
+    .section-2-main-style div {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap;
+    }
+    .section-2-main-style div div {
+        width: 30% !important;
+    }
+    .width-40 { width: 40%; }
+    .section-2-first-width {
+        width: 100% !important;
+    }
+    .section-2-second-width {
+        width: 100% !important;
+    }
+    .section-2-second-size {
+        height: 15%;
+        width: 100%;
+    }
+}
+.item-info .table-header {
+    padding: 6px 30px;
+}
+.table-header-none-border {
+    border: solid #e7e7e700;
+}
+
+.quit-verification-main .btn-br {
+    padding: 0 30px;
+}

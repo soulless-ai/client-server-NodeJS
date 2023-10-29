@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="icon-div">
+    <!-- Здесь начинается код для создания иконки настроек -->
+    <g id="settings-icon">
+        <!-- Внутренний круг (дырка) -->
+        <circle cx="50" cy="50" r="20" fill="transparent" stroke="#FD6A02" stroke-width="15"/>
+        <!-- Зубчатое колесо -->
+        <g fill="transparent">
+            <!-- Зубцы -->
+            <!-- Зубцы имеют длину 35 и размещены на окружности радиусом 40 -->
+            <!-- С 8 зубцами: 360 / 8 = 45 градусов между зубцами -->
+            <g transform="rotate(0 50 50)">
+            <rect x="45" y="15" width="15" height="20" rx="5" ry="5" fill="#EC6800"/>
+            </g>
+            <g transform="rotate(45 50 50)">
+            <rect x="45" y="15" width="15" height="20" rx="5" ry="5" fill="#EC6800"/>
+            </g>
+            <g transform="rotate(90 50 50)">
+            <rect x="45" y="15" width="15" height="20" rx="5" ry="5" fill="#EC6800"/>
+            </g>
+            <g transform="rotate(135 50 50)">
+            <rect x="45" y="15" width="15" height="20" rx="5" ry="5" fill="#EC6800"/>
+            </g>
+            <g transform="rotate(180 50 50)">
+            <rect x="45" y="15" width="15" height="20" rx="5" ry="5" fill="#EC6800"/>
+            </g>
+            <g transform="rotate(225 50 50)">
+            <rect x="45" y="15" width="15" height="20" rx="5" ry="5" fill="#EC6800"/>
+            </g>
+            <g transform="rotate(270 50 50)">
+            <rect x="45" y="15" width="15" height="20" rx="5" ry="5" fill="#EC6800"/>
+            </g>
+            <g transform="rotate(315 50 50)">
+            <rect x="45" y="15" width="15" height="20" rx="5" ry="5" fill="#EC6800"/>
+            </g>
+        </g>
+                
+        <!-- Анимация -->
+        <animateTransform
+            attributeName="transform"
+            attributeType="XML"
+            type="rotate"
+            from="0 50 50"
+            to="360 50 50"
+            dur="10s"
+            repeatCount="indefinite"
+        />
+    </g>
+</svg>

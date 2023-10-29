@@ -1,0 +1,19 @@
+body {
+	background-color: black;
+}
+footer {
+	z-index: 9999;
+}
+.niwax {
+	width: 100%;
+	margin-top: 100px;
+}
+.hero-section {
+	height: auto;
+}
+
+.contract_info_section {
+    height: auto;
+    margin-top: 170px;
+    padding-bottom: 550px;
+}

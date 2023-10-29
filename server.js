@@ -122,7 +122,7 @@ if (cluster.isMaster) {
   
   const __filename = fileURLToPath(import.meta.url);
   const __dirname = path.dirname(__filename);
-  app.use(express.static(path.join(__dirname, 'public'), {
+  app.use(express.static(path.join(__dirname, 'src'), {
     setHeaders: (res, path, stat) => {
       if (path.endsWith('.html')) {
         res.set('Content-Type', 'text/html');
@@ -136,7 +136,7 @@ if (cluster.isMaster) {
     }
   }));
   app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    res.sendFile(path.join(__dirname, 'src', 'index.html'));
   });
 
 

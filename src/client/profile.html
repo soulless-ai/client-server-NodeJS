@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+
+<html lang="ru" class="no-js">
+   <head>
+      <meta charset="utf-8"/>
+      <title>Site Name — Платформа бизнес аналитики</title>
+      <meta name="description" content="Для автоматизации получения данных и визуализации.">
+      <meta name="keywords" content="Бизнес аналитика, Автоматизания">
+      <meta name="author" content="Else-Agency">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta property="og:url" content="">
+      <meta property="og:title" content="Site Name — Платформа бизнес аналитики">
+      <meta property="og:description" content="Для автоматизации получения данных и визуализации.">
+      <meta property="og:type" content="website">
+      <meta property="og:image" content="">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="theme-color" content="#0e0321">
+      <link rel="canonical" href="">
+   <!--website-favicon-->
+      <link rel="icon" href="../images/favicon.png">
+      <link rel="shortcut icon" href="../images/favicon.png">
+      <link rel="apple-touch-icon" href="../images/favicon.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon.png">
+      <meta name="msapplication-TileColor" content="#D1823B">
+      <meta name="msapplication-TileImage" content="../images/favicon.png">
+   <!--plugin-css-->
+      <link href="../css/bootstrap.min.css" rel="stylesheet">
+      <link href="../css/plugin.min.css" rel="stylesheet">
+   <!-- template-style-->
+      <link href="../css/style.css" rel="stylesheet">
+      <link href="../css/responsive.css" rel="stylesheet">
+      <link href="../css/darkmode.css" rel="stylesheet">
+      <link href="../css/profile.css" rel="stylesheet">
+      <script async type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9e5f2cf8-e735-44d4-a115-921e92d5cb3d";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+   </head>
+   <body>
+   <!--Start Header -->
+      <header class="nav-bg-b main-header fixed-left">
+         <div class="menu-header">
+            <div class="icon-container">
+               <object data="../images/icons/home.svg" type="image/svg+xml"></object>
+               <div href="profile_options.html" class="toggles-options" id="home-button"></div>
+            </div>
+            <div class="icon-container">
+               <object data="../images/icons/settings.svg" type="image/svg+xml"></object>
+               <div href="profile_options.html" class="toggles-options" id="settings-button"></div>
+            </div>
+            <div class="icon-container buttons-bottom">
+               <svg fill="#EC6800" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/   xlink" 
+                  viewBox="0 0 478.666 478.666" width="60px" height="60px" xml:space="preserve" class="icon-div">
+                  <g class="closed-door"> <!-- Добавляем класс "closed-door" -->
+                     <path d="M71.553,0v478.085l335.561,0.581V0H71.553z M103.109,446.583V31.558h272.445v56.813h-10.781V42.086H113.893v394.468 h250.881V390.27h10.781v56.785L103.109,446.583z M364.773,137.459h10.781V341.18h-10.781V137.459z M165.787,239.32 c0,9.148-7.418,16.566-16.568,16.566c-9.15,0-16.568-7.418-16.568-16.566c0-9.15,7.418-16.568,16.568-16.568 C158.369,222.752,165.787,230.17,165.787,239.32z"/>
+                  </g>
+                  <g class="open-door"> <!-- Добавляем класс "open-door" -->
+                     <path d="M285.048,21.72L164.234,0v21.72H79.292v433.358h31.403V53.123h53.539V492.5l208.15-37.422v-61.235h9.421v61.235h31.403 V21.72H285.048z M202.526,263.129c-6.997,0-12.67-7.381-12.67-16.486c0-9.104,5.673-16.485,12.67-16.485s12.67,7.381,12.67,16.485 C215.196,255.748,209.523,263.129,202.526,263.129z M381.805,344.646h-9.421V142.621h9.421V344.646z M381.805,93.423h-9.421v-40.3 h9.421V93.423z"/>
+                  </g>
+               </svg>
+
+               <div href="profile_options.html" class="toggles-options" id="quit-button"></div>
+            </div>
+         </div>
+      </header>       
+   <!--End Menu -->
+      <section id="menu-section" class="">
+         <div class="menu-section-container">
+            <div class="menu-section-personal-info">
+               <div class="menu-section-email">
+                  <p class="profile-email"></p>
+               </div>
+            </div>
+            <div class="menu-section-data-info">
+               <div class="menu-section-data-info-first">
+                  <div class="menu-section-data-info-item">
+                     <p>Средний оборот в день</p>
+                     <h6 class="remainder-day">0</h6>
+                     </div>
+                     <div class="menu-section-data-info-item">
+                        <p>Расчётный остаток в днях</p>
+                        <h6 class="turnover-day">0</h6>
+                     </div>
+                  <div class="menu-section-data-info-item">
+                     <p>Остаток пакета</p>
+                     <h6 class="package-rest">0</h6>
+                  </div>
+                  <div class="menu-section-data-info-item">
+                     <p>Остаток на балансе</p>
+                     <h6 class="balance">0</h6><h6 style="border: none; padding-left: 0px"> ₽</h6>
+                  </div>
+                  <div class="menu-section-data-info-item" style="margin-left: 30px;">
+                     <div class="icon-container">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                              viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                           <style>
+                              .buy-button {
+                                 fill: white;
+                                 stroke: black;
+                                 transition: fill 0.4s ease; /* Добавляем плавное изменение цвета */
+                              }
+                              .buy-button-back {
+                                 fill: gray;
+                                 stroke: black;
+                                 transition: fill 0.2s ease; /* Добавляем плавное изменение цвета фона */
+                              }
+                           </style>
+                           <path class="buy-button-back" d="M478.553,382.589c-1.567,2.759-3.323,5.705-5.256,8.808c-27.136,43.468-66.957,78.211-114.291,99.035
+                           c-7.795,3.427-15.799,6.489-23.98,9.132c-4.827,1.567-9.718,2.999-14.66,4.274l32.172-444.771l39.999,34.994l42.998,1.003
+                           L478.553,382.589z"/>
+                           <path class="buy-button" d="M334.503,64.92c-10.909-28.421-28.212-53.77-56.592-49.246c-6.51-8.631-15.475-14.858-27.847-15.6
+                           h-0.042C249.208,0.021,248.383,0,247.536,0c-2.529,0-5.036,0.167-7.523,0.491c-44.116,5.778-80.238,61.67-93.8,125.555l-61.67,20.02
+                           l-33.73,263.053c18.474,24.701,41.294,45.965,67.344,62.631l188.938,35.15c9.509-1.923,18.829-4.378,27.93-7.335l17.512-440.498
+                           L334.503,64.92z M165.763,119.704c0,0,8.777-27.638,20.773-52.642c12.006-24.994,51.001-61.001,73.007-47.501
+                           c0.658,0.408,1.296,0.846,1.902,1.317c-25.266,11.661-45.108,38.922-55.223,85.692L165.763,119.704z M276.741,83.675l-49.622,16.102
+                           c0,0,9.467-51.493,44.534-64.136C279.406,55.557,276.741,83.675,276.741,83.675z M295.037,77.73c0,0,0-23.291-7.795-44.377
+                           c17.983,1.881,27.209,21.138,31.754,36.603L295.037,77.73z"/>
+                        </svg>
+                     </div>
+                     <div class="menu-section-data-info-item-payment">
+                        пополнить
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   <!--Start Hero-->
+      <section id="main-profile-section" class="contract_info_section">
+         <div class="text-block">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-8">
+                     <div class="common-heading-2">
+                        <h4 class="mb0">Подключённые аккаунты</h4>
+                     </div>
+                  </div>
+               </div>
+               <div class="table-background account-list-main">
+                  <div class="">
+                     <div class="isotope_item h-scl-">
+                        <div class="item-info add-account-button">
+                           <h6 class="">
+                              <a href="#"  id="addAccountButton" class="btn-br bg-btn3 btshad-b2 lnk">
+                                 Добавить аккаунт<span class="circle"></span>
+                              </a> 
+                           </h6> 
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row account-list-container">
+                     <div class="col-lg-4 col-sm-6 single-card-item account-list-class">
+                        <div class="isotope_item h-scl-">
+                           <div class="item-info">
+                              <p class="table-header">№:</p>
+                              <ul id="accountsNoList">
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-sm-6 single-card-item account-list-class">
+                        <div class="isotope_item h-scl-">
+                           <div class="item-info">
+                              <p class="table-header">Наименование</p>
+                              <ul id="accountsNameList">
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-sm-6 single-card-item account-list-class">
+                        <div class="isotope_item h-scl-">
+                           <div class="item-info">
+                              <p class="table-header">Номер</p>
+                              <ul id="accountsNumberList">
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-sm-6 single-card-item account-list-class">
+                        <div class="isotope_item h-scl-">
+                           <div class="item-info">
+                              <p class="table-header">Тип</p>
+                              <ul id="accountsTypeList">
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-sm-6 single-card-item account-list-class">
+                        <div class="isotope_item h-scl-">
+                           <div class="item-info">
+                              <p class="table-header">Использовано операций</p>
+                              <ul id="accountsUseOperationList">
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-sm-6 single-card-item account-list-class">
+                        <div class="isotope_item h-scl-">
+                           <div class="item-info">
+                              <p class="table-header">Дата обновления</p>
+                              <ul id="accountsUpdateDateList">
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-sm-6 single-card-item account-list-class table-header-none-border">
+                        <div class="isotope_item h-scl-">
+                           <div class="item-info">
+                              <p class="table-header"><br></p>
+                              <ul id="accountsActiveList">
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-sm-6 single-card-item account-list-class table-header-none-border">
+                        <div class="isotope_item h-scl-">
+                           <div class="item-info">
+                              <p class="table-header"><br></p>
+                              <ul id="accountsMenuList">
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="container" style="padding-bottom: 100px;">
+               <div class="row">
+                  <div class="col-lg-8">
+                     <div class="common-heading-2">
+                        <h4 class="mb0">Монитор заданий</h4>
+                     </div>
+                  </div>
+               </div>
+               <div class="table-background">
+                  <div class="row account-list-container">
+                     <div class="col-lg-4 col-sm-6 single-card-item account-list-class">
+                        <div class="isotope_item h-scl-">
+                           <div class="item-info">
+                              <p class="table-header">№:</p>
+                              <ul id="missionNoList">
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-sm-6 single-card-item account-list-class">
+                        <div class="isotope_item h-scl-">
+                           <div class="item-info">
+                              <p class="table-header">Аккаунт</p>
+                              <ul id=missionsAccountNameList>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-sm-6 single-card-item account-list-class">
+                        <div class="isotope_item h-scl-">
+                           <div class="item-info">
+                              <p class="table-header">Услуга</p>
+                              <ul id="missionsServiceNameList">
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-sm-6 single-card-item account-list-class">
+                        <div class="isotope_item h-scl-">
+                           <div class="item-info">
+                              <p class="table-header">Задание</p>
+                              <ul id="missionsNameList">
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-sm-6 single-card-item account-list-class">
+                        <div class="isotope_item h-scl-">
+                           <div class="item-info">
+                              <p class="table-header">Дата задания</p>
+                              <ul id="missionsDateList">
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-sm-6 single-card-item account-list-class">
+                        <div class="isotope_item h-scl-">
+                           <div class="item-info">
+                              <p class="table-header">Статус</p>
+                              <ul id="missionsStatusList">
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-sm-6 single-card-item account-list-class">
+                        <div class="isotope_item h-scl-">
+                           <div class="item-info">
+                              <p class="table-header">Операций</p>
+                              <ul id="missionsOperationList">
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div id="drag-drop-import-csv" class="hidden">
+               <div class="drag-area">
+                  <span id="drag-exit-button"></span>
+                  <div class="icon">
+                     <svg width="100px" height="100px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path id="file-upload-rection" fill-rule="evenodd" clip-rule="evenodd" d="M3 14.25C3.41421 14.25 3.75 14.5858 3.75 15C3.75 16.4354 3.75159 17.4365 3.85315 18.1919C3.9518 18.9257 4.13225 19.3142 4.40901 19.591C4.68577 19.8678 5.07435 20.0482 5.80812 20.1469C6.56347 20.2484 7.56459 20.25 9 20.25H15C16.4354 20.25 17.4365 20.2484 18.1919 20.1469C18.9257 20.0482 19.3142 19.8678 19.591 19.591C19.8678 19.3142 20.0482 18.9257 20.1469 18.1919C20.2484 17.4365 20.25 16.4354 20.25 15C20.25 14.5858 20.5858 14.25 21 14.25C21.4142 14.25 21.75 14.5858 21.75 15V15.0549C21.75 16.4225 21.75 17.5248 21.6335 18.3918C21.5125 19.2919 21.2536 20.0497 20.6517 20.6516C20.0497 21.2536 19.2919 21.5125 18.3918 21.6335C17.5248 21.75 16.4225 21.75 15.0549 21.75H8.94513C7.57754 21.75 6.47522 21.75 5.60825 21.6335C4.70814 21.5125 3.95027 21.2536 3.34835 20.6517C2.74643 20.0497 2.48754 19.2919 2.36652 18.3918C2.24996 17.5248 2.24998 16.4225 2.25 15.0549C2.25 15.0366 2.25 15.0183 2.25 15C2.25 14.5858 2.58579 14.25 3 14.25Z" fill="#4d4747"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 16.75C12.2106 16.75 12.4114 16.6615 12.5535 16.5061L16.5535 12.1311C16.833 11.8254 16.8118 11.351 16.5061 11.0715C16.2004 10.792 15.726 10.8132 15.4465 11.1189L12.75 15.2727V8.31818C12.75 7.90437 12.4142 7.56857 12 7.56857C11.5858 7.56857 11.25 7.90437 11.25 8.31818V15.2727L8.55353 11.1189C8.27403 10.8132 7.79963 10.792 7.49393 11.0715C7.18823 11.351 7.16698 11.8254 7.44648 12.1311L11.4465 16.5061C11.5886 16.6615 11.7894 16.75 12 16.75Z" fill="white">
+                           <animateTransform attributeName="transform" type="translate" values="0 0; 0 2; 0 0" begin="0s" dur="1.5s" repeatCount="indefinite" />
+                        </path>
+                     </svg>
+                     <header>Drag & Drop to Upload File</header>
+                  </div>
+                  
+                  <div class="browse-file">
+                     <span>OR</span>
+                     <a href="#"  id="browseFile" class="btn-br bg-btn3 btshad-b2 lnk">
+                        Выбрать файл<span class="circle"></span>
+                     </a> 
+                     <input type="file" hidden>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="options-section" class="contract_info_section hidden">
+         <div class="text-block">
+            <div class="container">
+               <div class="main_options">
+                  <form id="change_data_form">
+                     <div id="db_options">
+                        <div><h5>Название базы данных:</h5> 
+                           <p class="profile-db-name"><br></p></div>
+                        <div><h5>Имя пользователя:</h5> 
+                           <p class="profile-db-username"><br></p></div>
+                        <div><h5>Пароль:</h5> 
+                           <p class="profile-db-password"><br></p></div>
+                     </div>
+                     <div class="form-options">
+                        <div><h5>Имя:</h5> 
+                           <input id="change_name" type="text" name="change_name"> <h6 class="fly profile-name"></h6></div>
+                        <div><h5>Фамилия:</h5> 
+                           <input id="change_second_name" type="text" name="change_second_name"> <h6 class="fly profile-second-name"></h6></div>
+                        <div><h5>Телефон:</h5> 
+                           <select id="country" name="country">
+                              <option value="+7">+7</option>
+                              <option value="+1">+1</option>
+                           </select>
+                           <input id="change_phone" type="phone" name="change_phone"> <h6 class="fly profile-phone"></h6></div>
+                        <div><h5>Электронная почта:</h5> 
+                           <input id="change_email" type="email" name="change_email"> <h6 class="fly profile-email"></h6></div>
+                        <div><button id="change_password_button">Сменить пароль</button></div>
+                        <div><button id="submit_data">Сохранить изменение</button></div>
+                     </div>
+                  </form>
+                  <form id="change_password_form" class="hidden">
+                     <div class="form-options">
+                        <div><h5>Введите старый пароль:</h5> <input id="old_password" type="password" name="old_password"></div>
+                        <div><h5>Введите новый пароль:</h5> <input id="new_password" type="password" name="new_password"></div>
+                        <div><button id="backTo">Вернуться</button></div>
+                        <div><button id="submit_password">Сохранить изменение</button></div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </section>
+   <!--End Hero-->
+   <!--Start Service-->
+      <section id="service-section" class="dg-service2 hidden">
+          <div class="container"> 
+              <div>
+              <div class="col-lg-8">
+                  <div class="common-heading-section-two">
+                      <h2 class="mb30">Тарифы</h2>
+                      <h5 class="mb30">Количество обрабатываемых строк в месяц (млн.)</h5>
+                  </div>
+              </div>
+              <div class="section-2-buttons-border-style width-full justify-content-space-between">
+                  <div class="section-2-blocks-size flex-direction-col justify-content-space-between" onclick="activateBlock(1)">
+                      <div class="col-align-items justify-content-center button-for-active activeButton"  data-block="1">
+                          <h5>0.5</h5>
+                      </div>
+                  </div>
+                  <div class="section-2-blocks-size flex-direction-col justify-content-space-between" onclick="activateBlock(2)">
+                      <div class="col-align-items justify-content-center button-for-active" data-block="2">
+                          <h5>2</h5>
+                      </div>
+                  </div>
+                  <div class="section-2-blocks-size flex-direction-col justify-content-space-between" onclick="activateBlock(3)">
+                      <div class="col-align-items justify-content-center button-for-active" data-block="3">
+                          <h5>8</h5>
+                      </div>
+                  </div>
+                  <div class="section-2-blocks-size flex-direction-col justify-content-space-between" onclick="activateBlock(4)">
+                      <div class="col-align-items justify-content-center button-for-active" data-block="4">
+                          <h5>25</h5>
+                      </div>
+                  </div>
+                  <div class="section-2-blocks-size flex-direction-col justify-content-space-between" onclick="activateBlock(5)">
+                      <div class="col-align-items justify-content-center button-for-active" data-block="5">
+                          <h5>50</h5>
+                      </div>
+                  </div>
+              </div>
+              <div class="common-heading-section-two">
+                  <h5 class="mt40">Пакет опций:</h5>
+              </div>
+              <div class="section-2 width-full justify-content-space-between">
+                  <div class="section-2-first section-2-first-width justify-content-space-between">
+                      <div class="width-full section-2-blocks-margin-top justify-content-space-between flex-direction-col">
+                          <div class="width-full section-2-main-style section-2-first-blocks-height flex-direction-col justify-content-space-between">
+                              <h2>Обычный</h2>
+                              <div class="width-full justify-content-space-between pt40">
+                                  <div class="flex-direction-col justify-content-space-between" style="width: 11%;">
+                                      <div class="col-align-items flex-direction-col align-items-start">
+                                          <h6>Строки</h6>
+                                          <h4 class="normal-price-for-active active" data-block="1">0.5 млн</h4>
+                                          <h4 class="normal-price-for-active" data-block="2">2 млн</h4>
+                                          <h4 class="normal-price-for-active" data-block="3">8 млн</h4>
+                                          <h4 class="normal-price-for-active" data-block="4">25 млн</h4>
+                                          <h4 class="normal-price-for-active" data-block="5">50 млн</h4>
+                                      </div>
+                                  </div>
+                                  <div class="flex-direction-col justify-content-space-between">
+                                      <div class="col-align-items flex-direction-col align-items-start">
+                                          <h6>Проекты</h6>
+                                          <h4>4</h4>
+                                      </div>
+                                  </div>
+                                  <div class="flex-direction-col justify-content-space-between">
+                                      <div class="col-align-items flex-direction-col align-items-start">
+                                          <h6>Объём БД</h6>
+                                          <h4>5 гб</h4>
+                                      </div>
+                                  </div>
+                                  <div class="flex-direction-col justify-content-space-between width-40">
+                                      <div class="col-align-items flex-direction-col align-items-start">
+                                          <h6>Вычислительная мощность</h6>
+                                          <h4>6 ч</h4>
+                                      </div>
+                                  </div>
+                                  <div class="flex-direction-col justify-content-space-between width-40">
+                                      <div class="col-align-items flex-direction-col align-items-start">
+                                          <h6>Историческая загрузка</h6>
+                                          <h4>12 мес</h4>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="width-full section-2-main-style section-2-first-blocks-height flex-direction-col justify-content-space-between">
+                              <h2>Расширенный</h2>
+                              <div class="width-full justify-content-space-between">
+                                  <div class="flex-direction-col justify-content-space-between" style="width: 11%;">
+                                      <div class="col-align-items flex-direction-col align-items-start">
+                                          <h6>Строки</h6>
+                                          <h4 class="premium-price-for-active active" data-block="1">0.5 млн</h4>
+                                          <h4 class="premium-price-for-active" data-block="2">2 млн</h4>
+                                          <h4 class="premium-price-for-active" data-block="3">4 млн</h4>
+                                          <h4 class="premium-price-for-active" data-block="4">25 млн</h4>
+                                          <h4 class="premium-price-for-active" data-block="5">50 млн</h4>
+                                      </div>
+                                  </div>
+                                  <div class="flex-direction-col justify-content-space-between">
+                                      <div class="col-align-items flex-direction-col align-items-start">
+                                          <h6>Проекты</h6>
+                                          <h4>10</h4>
+                                      </div>
+                                  </div>
+                                  <div class="flex-direction-col justify-content-space-between">
+                                      <div class="col-align-items flex-direction-col align-items-start">
+                                          <h6>Объём БД</h6>
+                                          <h4>10 гб</h4>
+                                      </div>
+                                  </div>
+                                  <div class="flex-direction-col justify-content-space-between width-40">
+                                      <div class="col-align-items flex-direction-col align-items-start">
+                                          <h6>Вычислительная мощность</h6>
+                                          <h4>9 ч</h4>
+                                      </div>
+                                  </div>
+                                  <div class="flex-direction-col justify-content-space-between width-40">
+                                      <div class="col-align-items flex-direction-col align-items-start">
+                                          <h6>Историческая загрузка</h6>
+                                          <h4>24 мес</h4>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="section-2-info-block">
+                                  <div class="section-2-buttons-border-style section-2-info-items">
+                                      <h6>Система управлениями пользователями</h6>
+                                  </div>
+                                  <div class="section-2-buttons-border-style section-2-info-items">
+                                      <h6>Опция расширения количества БД</h6>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="section-2-second section-2-second-width section-2-main-style section-2-blocks-margin-top flex-direction-col justify-content-space-between wow" data-wow-delay=".6s">
+                      <div class="">
+                          <h2 class="block-for-active active" data-block="1">1 000 ₽</h2>
+                          <h2 class="block-for-active" data-block="2">3 000 ₽</h2>
+                          <h2 class="block-for-active" data-block="3">6 000 ₽</h2>
+                          <h2 class="block-for-active" data-block="4">10 000 ₽</h2>
+                          <h2 class="block-for-active" data-block="5">20 000 ₽</h2>
+                          <h5>Цена за месяц</h5>
+                          <p class="mt20">Бесплатный 14-ти дневный триал позволит пользователю протестировать весь функционал сервиса в рамках 1 базы данных с ограничением на выгруку исторических данных в 1 месяц и суммарным объемом выгрузки не более 5 млн строк.</p>
+                      </div>
+                      <div class="section-2-second-size">
+                          <a href="#" id="main_button" class="btn-br bg-btn3 btshad-b2 lnk">
+                              Приобрести
+                              <span class="circle"></span>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <form id="addAccountForm" class="hidden">
+         <div class="form-container">
+            <h4 class="mb0" style="padding-bottom: 10px;">Добавление аккаунта</h4>
+            <div class="form-group">
+               <label>Выберите тип:</label>
+               <div class="radioButtons">
+                  <label>
+                     <input id="accountType1" type="radio" name="accountType" value="Тип 1" checked>
+                     тип 1
+                  </label>
+                  <label>
+                     <input id="accountType2" type="radio" name="accountType" value="Тип 2">
+                     тип 2
+                  </label>
+               </div>
+            </div>
+            <div class="form-group">
+               <label for="accountName">Наименование:</label>
+               <input type="text" id="accountName" name="accountName" required>
+            </div>
+            <div class="form-group">
+               <label for="code1">Код 1:</label>
+               <input type="text" id="code1" name="code1" required>
+            </div>
+            <div class="form-group" id="code2-group">
+               <label for="code2">Код 2:</label>
+               <input type="text" id="code2" name="code2">
+            </div>
+            <a href="#" id="addAccountSubmit" class="btn-br bg-btn3 btshad-b2 lnk">
+               Отправить<span class="circle"></span>
+            </a>
+         </div>
+      </form>
+      <div class="quit-verification-section hidden" id="quit-verification-section">
+         <div class="quit-verification-main">
+            <h6>Вы уверены, что хотите выйти?</h6>
+            <div>
+               <a href="#" id="quit" class="btn-br bg-btn3 btshad-b2 lnk">
+                  Выйти<span class="circle"></span>
+               </a>
+               <a href="#" id="cancel-quit" class="btn-br bg-btn3 btshad-b2 lnk">
+                  Отмена<span class="circle"></span>
+               </a>
+            </div>
+         </div>
+      </div>
+   <!--End Service-->
+   <!-- js placed at the end of the document so the pages load faster -->
+      <script async src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.development.js"></script>
+      <script async src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.development.js"></script>
+      <script async src="https://cdnjs.cloudflare.com/ajax/libs/react-redux/7.2.5/react-redux.min.js"></script>
+
+      <script async src="../js/vendor/modernizr-3.5.0.min.js"></script>
+      <script async src="../js/jquery.min.js"></script>
+      <script async src="../js/bootstrap.bundle.min.js"></script> 
+      <script async src="../js/plugin.min.js"></script>
+      <script async src="../js/dark-mode.js"></script>
+   <!--common script file-->
+      <script async src="../js/main.js"></script>
+      <script async type="module" src="../js/config.js"></script>
+      <script async type="module" src="../js/profile.js"></script>
+      <script async type="module" src="../js/profileControllers/getProfileData.js"></script>
+      <script async type="module" src="../js/profileControllers/profileOptions.js"></script>
+      <script async type="module" src="../js/profileControllers/profileOptionsClientDB.js"></script>
+      <script async type="module" src="../js/profileControllers/getAccountsList.js"></script>
+      <script async type="module" src="../js/profileControllers/activeListeners.js"></script>
+      <script async type="module" src="../js/profileControllers/menuListeners.js"></script>
+      <script async type="module" src="../js/profileControllers/getMissionsList.js"></script>
+      <script async type="module" src="../js/profileControllers/addAccount.js"></script>
+   </body>
+</html>
